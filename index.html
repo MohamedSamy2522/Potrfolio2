@@ -15,48 +15,61 @@
 
 <body>
     <header>
+       
         <nav class="container">
             <a href="#" class="logo">Samy</a>
             <div class="links" id="links">
                 <span class="close_menu" onclick="open_close_menu()"><i class="fa-solid fa-xmark"></i></span>
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#About">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" id="nav-home">Home</a>
+                <a href="#services" id="nav-services">Services</a>
+                <a href="#About" id="nav-about">About</a>
+                <a href="#projects" id="nav-projects">Projects</a>
+                <a href="#contact" id="nav-contact">Contact</a>
+                <div class="sswitch">
+                    <label class="switch">
+                        <input type="checkbox" id="switchbtn" />
+                        <span class="slider"></span>
+                        <span class="clouds_stars"></span>
+                    </label>
+                </div>
+                <div class="translate">
+                    <a class="translate" href=""><i class="fa-solid fa-language" id="language-icon"></i></a>
+                </div>
+            </div>
+
+                
             </div>
             <div class="social">
                 <a href="tel: +201551156171"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/share/1BCfLWiyoM/"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/mohammed_samy_ll?igsh=aTNuenJyaDg5MmNm"><i class="fa-brands fa-instagram"></i></a>
+                <span><i class="fa-light fa-language"></i></span>
                 <span class="icon_menu" onclick="open_close_menu()"><i class="fa-solid fa-bars"></i></span>
-            </div>
+            
+                
+            
         </nav>
     </header>
 
     <section class="Home" id="home">
         <div class="container">
                 <div class="info">
-                    <h1>Hey <img src="image/harnd.png" alt="">, I'm <br>
-                        Mohammed Samy</h1>
-                    
-                    <p>I'm creative designer based in Egypt, and I'm <br>
-                        very passionate and dedicated to my work. say Hello</p>
-                    
+                    <h1><span id="hello">Hey</span>, I'm <br> <span>Mohammed Samy</span></h1>
+                <p id="intro">I'm a creative designer based in Egypt, and I'm very passionate and dedicated to my work.</p>
                     <div class="containerLinks">
                         <a href="#services">
-                            <span>Services</span>
+                            <span id="services-btn">Services</span>
                             <div class="icons">
                                 <img src="image/figma.png" alt="">
                                 <img src="image/wordpress.png" alt="">
                             </div>
                         </a>
                         <a href="#">
-                            <span>Portfolio</span>
+                            <span id="portfolio-btn">Portfolio</span>
                             <img src="image/laptop.png" alt="">
                         </a>
                         <a href="#About">
-                            <span>About</span>
+                            <span id="about-btn">About</span>
                             <img class="icon_about" src="image/about.png" alt="">
                         </a>
                         
@@ -71,18 +84,18 @@
     <section class="About" id="About">
         <div class="container">
             <div class="about_texts">
-                <h5>about me</h5>
-                <h2>I'm a Developer</h2>
-                <h4>I Develop Application that help People</h4>
+                <h5 id="about-me">About Me</h5>
+                <h2 id="developer">I'm a Developer</h2>
+                <h4 id="dev-desc">I Develop Applications that help People</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium quo modi, molestiae consectetur quam fugit veritatis incidunt at amet culpa. Delectus reiciendis alias repellendus.</p>
             
                 <ul>
-                    <li><i class="fa-solid fa-check"></i>Web Development</li>
-                    <li><i class="fa-solid fa-check"></i>UI / UX Design</li>
-                    <li><i class="fa-solid fa-check"></i>Digital Markrting</li>
-                    <li><i class="fa-solid fa-check"></i>Product Design </li>
+                    <li><i class="fa-solid fa-check"></i><span id="web-dev">Web Development</span></li>
+                    <li><i class="fa-solid fa-check"></i><span id="ui-ux">UI / UX Design</span></li>
+                    <li><i class="fa-solid fa-check"></i><span id="digital-marketing">Digital Marketing</span></li>
+                    <li><i class="fa-solid fa-check"></i><span id="product-design">Product Design</span></li>
                 </ul>
-                <a href="image/mm.jpg" class="btn" download="">Download CV</a>
+                <a href="image/mm.jpg" class="btn"  id="download-cv" download="">Download CV</a>
             </div>
             <img src="image/man.png" alt="">
         </div>
@@ -91,26 +104,26 @@
     <section class="services" id="services">
         <div class="container">
             <div class="top_section">
-                <h2>Our <span>Services</span></h2>
+                <h2 id="our-services">Our <span>Services</span></h2>
             </div>
             <div class="boxs">
                 <div class="box">
                     <i class="fa-solid fa-pen-ruler"></i>
                     <h3>Web Design</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aliquam quibusdam vol</p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="#" class="btn" id="read-more-1">Read More</a>
                 </div>
                 <div class="box">
                     <i class="fa-solid fa-rocket"></i>
                     <h3>Web Design</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aliquam quibusdam vol</p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="#" class="btn" id="read-more-1">Read More</a>
                 </div>
                 <div class="box">
                     <i class="fa-solid fa-code"></i>
                     <h3>Web Design</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aliquam quibusdam vol</p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="#" class="btn" id="read-more-1">Read More</a>
                 </div>
             </div>
             
@@ -120,7 +133,7 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="top_section">
-                <h2>Explore my popular <span>Projects</span></h2>
+                <h2 id="explore-projects">Explore my popular <span>Projects</span></h2>
             </div>
 
             <div class="project_box">
@@ -173,13 +186,14 @@
             </div>
             <form method="post" action="https://api.sheetmonkey.io/form/hYoknMWBvGCSVDro349dnE">
                 <div class="inputs_form">
-                    <input type="text" placeholder="Full Name" name="Name" required>
-                    <input type="text" placeholder="Email" name="Email" required>
-                    <input type="text" placeholder="Mobile Number" name="Number">
-                    <input type="text" placeholder="Subject" name="Subject">
+                    <input type="text" placeholder="Full Name"  id="full-name" name="Name" required>
+                    <input type="text" placeholder="Email"  id="email" name="Email" required>
+                    <input type="text" placeholder="Mobile Number"  id="mobile" name="Number">
+                    <input type="text" placeholder="Subject" id="subject" name="Subject">
                     <textarea name="Message" id="" rows="10" placeholder="Your Message Here....."></textarea>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" id="send-message">Send Message</button>
+
             </form>
         </div>
     </section>
